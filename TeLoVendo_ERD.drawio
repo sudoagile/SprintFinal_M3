@@ -1,0 +1,103 @@
+<mxfile host="Electron" modified="2024-07-31T18:27:12.118Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.6.4 Chrome/124.0.6367.207 Electron/30.0.6 Safari/537.36" etag="ztCB8eptFY-0q2rIeYnB" version="24.6.4" type="device">
+  <diagram name="Ejercicio2" id="0">
+    <mxGraphModel dx="879" dy="456" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" value="Camionero" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=20;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=0;recursiveResize=0;expand=0;" parent="1" vertex="1" connectable="0">
+          <mxGeometry x="100" y="100" width="200" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="3" value="dni (PK)" style="text" parent="2" vertex="1">
+          <mxGeometry y="20" width="200" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="4" value="nombre" style="text" parent="2" vertex="1">
+          <mxGeometry y="40" width="200" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="5" value="teléfono" style="text" parent="2" vertex="1">
+          <mxGeometry y="60" width="200" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="6" value="dirección" style="text" parent="2" vertex="1">
+          <mxGeometry y="80" width="200" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="7" value="salario" style="text" parent="2" vertex="1">
+          <mxGeometry y="100" width="200" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="8" value="población" style="text" parent="2" vertex="1">
+          <mxGeometry y="120" width="200" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="9" value="Paquete" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=20;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=0;recursiveResize=0;expand=0;" parent="1" vertex="1" connectable="0">
+          <mxGeometry x="400" y="100" width="200" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="10" value="código_paquete (PK)" style="text" parent="9" vertex="1">
+          <mxGeometry y="20" width="200" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="11" value="descripción" style="text" parent="9" vertex="1">
+          <mxGeometry y="40" width="200" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="12" value="destinatario" style="text" parent="9" vertex="1">
+          <mxGeometry y="60" width="200" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="13" value="dirección_destinatario" style="text" parent="9" vertex="1">
+          <mxGeometry y="80" width="200" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="14" value="dni_camionero (FK)" style="text" parent="9" vertex="1">
+          <mxGeometry y="100" width="200" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="15" value="Provincia" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=20;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=0;recursiveResize=0;expand=0;" parent="1" vertex="1" connectable="0">
+          <mxGeometry x="50" y="400" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="16" value="código_provincia (PK)" style="text" parent="15" vertex="1">
+          <mxGeometry y="20" width="200" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="17" value="nombre" style="text" parent="15" vertex="1">
+          <mxGeometry y="40" width="200" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="18" value="Camión" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=20;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=0;recursiveResize=0;expand=0;" parent="1" vertex="1" connectable="0">
+          <mxGeometry x="500" y="300" width="200" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="19" value="matrícula (PK)" style="text" parent="18" vertex="1">
+          <mxGeometry y="20" width="200" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="20" value="modelo" style="text" parent="18" vertex="1">
+          <mxGeometry y="40" width="200" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="21" value="tipo" style="text" parent="18" vertex="1">
+          <mxGeometry y="60" width="200" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="22" value="potencia" style="text" parent="18" vertex="1">
+          <mxGeometry y="80" width="200" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="23" value="Distribución" style="rhombus" parent="1" vertex="1">
+          <mxGeometry x="290" y="300" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="24" value="dni_camionero (PK, FK)" style="text" parent="23" vertex="1">
+          <mxGeometry width="80" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="25" value="matrícula (PK, FK)" style="text" parent="23" vertex="1">
+          <mxGeometry y="20" width="80" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="26" value="fecha" style="text" parent="23" vertex="1">
+          <mxGeometry y="40" width="80" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;" parent="1" source="2" target="9" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;" parent="1" source="15" target="9" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="150" y="500" />
+              <mxPoint x="740" y="500" />
+              <mxPoint x="740" y="180" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;" parent="1" source="2" target="23" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;" parent="1" source="18" target="23" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
